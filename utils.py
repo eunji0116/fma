@@ -198,7 +198,7 @@ def load(filepath):
 
         COLUMNS = [('track', 'tags'), ('album', 'tags'), ('artist', 'tags'),
                    ('track', 'genres'), ('track', 'genres_all'),
-                   ('track', 'genres_top')]
+                   ('track', 'genre_top')]
         for column in COLUMNS:
             tracks[column] = tracks[column].map(ast.literal_eval)
 
